@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Produktu sarasas</title>
+</head>
+<body >
+<table>
+    <tr th:each="product: ${products}">
+        <td th:text="'Pavadinimas: '+${product.getName()}" />
+        <td th:text="'Kiekis: '+${product.getInStock()}" />
+        <td th:text="'kaina: '+${product.getPrice()}" />
+
+
+
+    </tr>
+</table>
+</body>
+</html>
